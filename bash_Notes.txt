@@ -1,0 +1,24 @@
+https://www.andrewcbancroft.com/blog/musings/make-bash-script-executable/
+
+1) Create a new text file with a .sh extension.
+
+2) Add #!/bin/bash to the top of it.
+
+3) Add lines that you’d normally type at the command line.
+
+#!/bin/bash
+2
+3hugo
+4
+5git add .
+6
+7git commit -m "Updates"
+8
+9git push
+
+4) At the command line, run chmod u+x YourScriptFileName.sh
+
+I ran chmod u+x deploy.sh to make mine executable.
+
+5) Run it whenever you need!
+Now, whenever I deploy changes to my website, I run ./deploy.sh and boom. Done.
